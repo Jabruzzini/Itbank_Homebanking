@@ -7,22 +7,42 @@
 }
 
 /* banner de etiqueta header*/
-.tituloHB {
-    color: white;
-    font-family:'Roboto Mono', monospace;
-    font-size: large;
-    float: right;
-}
+
 .site-header {
     background-image: url('../Multimedia/fondobanner.jpg');
-    background-position: center center;
+    background-position: fixed;
     background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
+    height: 5rem;
+    width: 100%;
 
 }
+
+#tituloHB {
+    color: white;
+    font-family:'Roboto Mono', monospace;
+    font-size: 4rem;
+    float: right;
+    margin: 0 4rem;  
+}
+
+#logoitbank {
+    float: left;
+    height: 4rem;
+    width: 100%;
+    max-width: 10rem;
+    display: inline;
+    margin: 10px;
+}
+
+#logoayuda {
+    float: right;
+    height: 2rem;
+    width: 2rem;
+    margin: 2rem 10px 0;  
+}
+ 
 /* Cuerpo en general de Comprobantes*/
 body {
-    background-color: bisque;
+    background-color: #FAF3FE8C;
 }
 
