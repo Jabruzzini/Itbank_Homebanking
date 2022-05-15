@@ -1,13 +1,13 @@
 /* Inicio de COMPROBANTES*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-
+/*RESET*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* banner de etiqueta header*/
-.header {
+/* Banner de etiqueta header*/
+#header {
     background-image: url('../Multimedia/fondobanner.jpg');
     background-size: cover;
     position: fixed;
@@ -45,8 +45,8 @@ body {
 /*PARTE RESPONSIVE*/
 @media screen and (max-width: 570px) { /*Si la pantalla tiene como ancho maximo 570px*/
    
-    .header {
-        height: 10rem;
+    #header {
+        height: 6rem;
         width: 100%;
         background-size: cover;
     }
@@ -57,8 +57,8 @@ body {
     }    
     #logoitbank {
         display: cover;
-        height: 8rem;
-        width: 80%;
+        height: 5rem;
+        width: 70%;
         }
 
     .tituloHB {
