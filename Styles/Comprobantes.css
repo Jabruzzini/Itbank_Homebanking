@@ -1,5 +1,28 @@
-/* Inicia el CSS de la penstaña 1 de Comprobantes (Transacciones) */
+/* Inicio de COMPROBANTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-head {
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+/* banner de etiqueta header*/
+.tituloHB {
+    color: white;
+    font-family:'Roboto Mono', monospace;
+    font-size: large;
+    float: right;
+}
+.site-header {
+    background-image: url('../Multimedia/fondobanner.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+
+}
+/* Cuerpo en general de Comprobantes*/
+body {
+    background-color: bisque;
+}
+
