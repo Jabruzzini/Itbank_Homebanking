@@ -7,30 +7,27 @@
 }
 
 /* banner de etiqueta header*/
-
-.site-header {
+.header {
     background-image: url('../Multimedia/fondobanner.jpg');
-    background-position: fixed;
     background-size: cover;
-    height: 5rem;
+    position: fixed;
+    top: 0;
+    height: 15%;
     width: 100%;
-
 }
 
-#tituloHB {
+.tituloHB {
     color: white;
     font-family:'Roboto Mono', monospace;
     font-size: 4rem;
+    line-height: 3rem;
     float: right;
-    margin: 0 4rem;  
+    margin: 2rem 4rem;  
 }
 
 #logoitbank {
-    float: left;
     height: 4rem;
-    width: 100%;
-    max-width: 10rem;
-    display: inline;
+    width: 20%;
     margin: 10px;
 }
 
@@ -38,11 +35,35 @@
     float: right;
     height: 2rem;
     width: 2rem;
-    margin: 2rem 10px 0;  
+    margin: 50px 5px 0;
 }
- 
+
 /* Cuerpo en general de Comprobantes*/
 body {
     background-color: #FAF3FE8C;
 }
+/*PARTE RESPONSIVE*/
+@media screen and (max-width: 570px) { /*Si la pantalla tiene como ancho maximo 570px*/
+   
+    .header {
+        height: 10rem;
+        width: 100%;
+        background-size: cover;
+    }
+    #logoayuda {
+        display: cover;
+        width: 5%;
+        top: 0;
+    }    
+    #logoitbank {
+        display: cover;
+        height: 8rem;
+        width: 80%;
+        }
+
+    .tituloHB {
+        display: none;
+    }
+}
+
 
