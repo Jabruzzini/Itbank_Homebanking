@@ -11,16 +11,18 @@
 	background-image: url('../Multimedia/fondobanner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* position: fixed; */
-	height: 15%;
 	width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .tituloHB {
 	color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 4rem;
-	line-height: 3rem;
+	font-size: 2rem;
+	line-height: 1.3rem;
 	float: right;
 	margin: 2rem 4rem 0;
 }
@@ -44,13 +46,20 @@ body {
 	background-color: #FAF3FE8C;
 }
 
-.miscomprobantes {
-	background: rgba(0, 0, 0, 0.69);
+.container {
+    background: rgba(0, 0, 0, 0.69);
 	background-size: cover;
-	width: 100%;
-    display: flex;
+    width: 85%;
+    max-width: 100%;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+}
+.miscomprobantes {
+	display: flex;
 	justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
 h2 {
@@ -61,35 +70,35 @@ h2 {
 	line-height: 3rem;
 }
 
-button {
-    display: none;
+.usuario-icon {
+    display: block;
+    padding: 1rem;
+    color: black;
+
 }
 .menu-icon{
     display: none;
 }
-/* .navegacion {
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.1rem;
-} */
 
-.navegacion ul {
-	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.navegacion {
     align-items: center;
-    gap: 0.1rem;
+    gap: 1rem;
+}
+.navegacion ul {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    
 }
 
 .navegacion ul li {
-    display: flex;
+    display: inline-block;
 	border-style: solid;
 	border-color: #638076;
-	background-color: #638076;
-    /* background-size: cover; */
+	background-color: #638076;    
     padding: 0.3rem;
+    transition: all 0.4s linear;
+    border-radius: 5px; 
 }
 
 .navegacion ul li a {
@@ -98,15 +107,20 @@ button {
 	text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;  
-    padding: 0.5rem 1rem;  
+    padding: 0.5rem 1rem; 
+    
 }
 
 .navegacion ul li:hover {
 	background: rgba(195, 133, 72, 0.668);   
 }
 
+.main {
+    padding-top: 5.5rem;
+}
+
 /*PARTE RESPONSIVE*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 867px) {
 	/*Si la pantalla tiene como ancho maximo 570px*/
 
 	#header {
@@ -129,19 +143,14 @@ button {
 		display: none;
 	}
 
-    button {
-        display: block;
-    }
-
-    .navegacion{
-        width: 100%;
-        margin-top: 1rem;
-    }
-
     .menu-icon {
         display: block;
         cursor: pointer;
-        padding: 0.5rem 1rem; 
+ 
+    }
+    .navegacion{
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .navegacion ul{
@@ -154,12 +163,15 @@ button {
 
     .navegacion ul li{
         display: block;  
-        background-size: cover;
         padding: 0.5rem 0; 
+        transition: all 0.4s linear;
+        border-radius: 5px; 
+        
     }
 
-    /* .navegacion ul li a{
+    .navegacion ul li a{
         display: block;
-        padding: 0.5rem 0;   
-    } */
+        padding: 0.5rem 0;  
+        
+    }
 }
