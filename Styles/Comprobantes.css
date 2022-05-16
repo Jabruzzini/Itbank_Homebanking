@@ -2,89 +2,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 /*RESET*/
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Banner de etiqueta header*/
 #header {
-    background-image: url('../Multimedia/fondobanner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* position: fixed; */
-    top: 0;
-    height: 15%;
-    width: 100%;
-}
-
-.logo-nav-contenedor{
-    display: flex;
+	background-image: url('../Multimedia/fondobanner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* position: fixed; */
+	height: 15%;
+	width: 100%;
 }
 
 .tituloHB {
-    color: white;
-    font-family:'Roboto Mono', monospace;
-    font-size: 4rem;
-    line-height: 3rem;
-    float: right;
-    margin: 2rem 4rem;  
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 4rem;
+	line-height: 3rem;
+	float: right;
+	margin: 2rem 4rem 0;
 }
 
 #logoitbank {
-    height: 4rem;
-    width: 20%;
-    margin: 10px;
+	height: 4rem;
+	width: 20%;
+	margin: 10px;
 }
 
 #logoayuda {
-    float: right;
-    height: 2rem;
-    width: 2rem;
-    margin: 50px 5px 0;
+	float: right;
+	height: 2rem;
+	width: 2rem;
+	margin: 50px 5px 0;
 }
 
 /* Cuerpo en general de Comprobantes*/
 
-/*PARTE RESPONSIVE*/
-@media screen and (max-width: 570px) { /*Si la pantalla tiene como ancho maximo 570px*/
-   
-    #header {
-        height: 6rem;
-        width: 100%;
-        background-size: cover;
-    }
-    #logoayuda {
-        display: cover;
-        width: 5%;
-        top: 0;
-    }    
-    #logoitbank {
-        display: cover;
-        height: 5rem;
-        width: 70%;
-        }
-
-    .tituloHB {
-        display: none;
-    }
-}
-
 body {
-    background-color: #FAF3FE8C;
+	background-color: #FAF3FE8C;
 }
 
 .miscomprobantes {
-    display: flex;
-    background: rgba(0, 0, 0, 0.69);
-    mix-blend-mode: normal;
-    box-shadow: -10px 0px 15px 5px rgba(226, 114, 118, 0.15);
-    justify-content: center;  
-    background-size: cover;
-    width: 100%;
+	background: rgba(0, 0, 0, 0.69);
+	background-size: cover;
+	width: 100%;
 }
- h2{
-    color: white;
-    font-family: monospace;
-    font-style: bold;
-    font-size: 2rem;
- }
+
+
+/* .miscomprobantes {
+	display: flex;
+	justify-content: space-between;
+    
+    flex-wrap: wrap;
+} */
+
+h2 {
+	color: white;
+	font-family: monospace;
+	font-style: bold;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+.menu-icon{
+    display: none;
+}
+.navegacion {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+}
+
+.navegacion ul.show {
+	display: none;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    list-style: none;
+	border-style: solid;
+	border-color: #638076;
+	background-color: #638076;
+    background-size: cover;
+    padding: 0.3rem;
+}
+
+.navegacion ul li a {
+    display: block;
+	color: white;
+	text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;  
+    padding: 0.5rem 1rem;  
+    
+}
+
+.navegacion ul li:hover {
+	background: rgba(195, 133, 72, 0.668);   
+}
+
+/*PARTE RESPONSIVE*/
+@media screen and (max-width: 767px) {
+	/*Si la pantalla tiene como ancho maximo 570px*/
+
+	#header {
+		/* height: 6rem; */
+		width: 100%;
+		background-size: cover;
+	}
+	#logoayuda {
+		display: cover;
+		width: 5%;
+		top: 0;
+	}
+	#logoitbank {
+		display: cover;
+		height: 5rem;
+		width: 70%;
+	}
+
+	.tituloHB {
+		display: none;
+	}
+
+    .navegacion{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem; 
+    }
+
+    .navegacion ul{
+        display: none; 
+    }
+
+    .navegacion ul.show{
+        display: block;
+    }
+
+    .navegacion ul li{
+        display: block;  
+        background-size: cover;
+        padding: 0.5rem 0; 
+    }
+
+    /* .navegacion ul li a{
+        display: block;
+        padding: 0.5rem 0;   
+    } */
+}
