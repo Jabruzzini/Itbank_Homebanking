@@ -12,10 +12,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
 }
 
 .tituloHB {
@@ -45,21 +45,21 @@
 body {
 	background-color: #FAF3FE8C;
 }
-
+/*Inicio del banner de MIS COMPROBANTES*/
 .container {
-    background: rgba(0, 0, 0, 0.69);
+	background: rgba(0, 0, 0, 0.69);
 	background-size: cover;
-    width: 85%;
-    max-width: 100%;
-    padding: 0.5rem 0;
-    margin: 0 auto;
+	width: 85%;
+	max-width: 100%;
+	padding: 0.5rem 0;
+	margin: 0 auto;
 }
 .miscomprobantes {
 	display: flex;
 	justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
 }
 
 h2 {
@@ -71,58 +71,55 @@ h2 {
 }
 
 .usuario-icon {
-    display: block;
-    padding: 1rem;
-    color: black;
-
+	display: block;
+	padding: 1rem;
+	color: black;
 }
-.menu-icon{
-    display: none;
+.menu-icon {
+	display: none;
 }
 
 .navegacion {
-    align-items: center;
-    gap: 1rem;
+	align-items: center;
+	gap: 1rem;
 }
 .navegacion ul {
 	margin: 0;
-    padding: 0;
-    list-style: none;
-    
+	padding: 0;
+	list-style: none;
 }
 
 .navegacion ul li {
-    display: inline-block;
+	display: inline-block;
 	border-style: solid;
 	border-color: #638076;
-	background-color: #638076;    
-    padding: 0.3rem;
-    transition: all 0.4s linear;
-    border-radius: 5px; 
+	background-color: #638076;
+	padding: 0.3rem;
+	transition: all 0.4s linear;
+	border-radius: 5px;
 }
 
 .navegacion ul li a {
-    display: block;
+	display: block;
 	color: white;
 	text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1em;  
-    padding: 0.5rem 1rem; 
-    
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	padding: 0.5rem 1rem;
 }
 
 .navegacion ul li:hover {
-	background: rgba(195, 133, 72, 0.668);   
+	background: rgba(195, 133, 72, 0.668);
 }
 
 .main {
-    padding-top: 5.5rem;
+	padding-top: 5.5rem;
 }
 
 /*PARTE RESPONSIVE*/
 @media screen and (max-width: 867px) {
-	/*Si la pantalla tiene como ancho maximo 570px*/
-
+	/*Si la pantalla tiene como ancho maximo 867px*/
+    /* Header Responsive*/
 	#header {
 		/* height: 6rem; */
 		width: 100%;
@@ -142,36 +139,33 @@ h2 {
 	.tituloHB {
 		display: none;
 	}
+    /* Mis Comprobantes Responsive*/
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+	}
+	.navegacion {
+		width: 100%;
+		margin-top: 1rem;
+	}
+    /* si la pantalla es menor de 867px, no se muestra la barra navegacion directamente, sino a traves de menu-icon*/
+	.navegacion ul {
+		display: none;
+	}
+    /* a partir de aca ver funcion menuBtn.click en la hoja script.js*/
+	.navegacion ul.show {
+		display: block;
+	}
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
- 
-    }
-    .navegacion{
-        width: 100%;
-        margin-top: 1rem;
-    }
+	.navegacion ul li {
+		display: block;
+		padding: 0.5rem 0;
+		transition: all 0.4s linear;
+		border-radius: 5px;
+	}
 
-    .navegacion ul{
-        display: none; 
-    }
-
-    .navegacion ul.show{
-        display: block;
-    }
-
-    .navegacion ul li{
-        display: block;  
-        padding: 0.5rem 0; 
-        transition: all 0.4s linear;
-        border-radius: 5px; 
-        
-    }
-
-    .navegacion ul li a{
-        display: block;
-        padding: 0.5rem 0;  
-        
-    }
+	.navegacion ul li a {
+		display: block;
+		padding: 0.5rem 0;
+	}
 }
