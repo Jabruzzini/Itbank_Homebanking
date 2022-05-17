@@ -15,12 +15,14 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="../Multimedia/logoITBANK.png" alt="logoITBANK" width="50%" height="24%">
-              </a>
-            </div>
-          </nav>
-     </header>
+        <div class="col-sm-12">
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="../../Multimedia/logoITBANK.png" alt="logoITBANK" width="50%" height="24%">
+                  </a>
+                </div>
+              </nav>
+        </div>
+     </header> 
 </body>
