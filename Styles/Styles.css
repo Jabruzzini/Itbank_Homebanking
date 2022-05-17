@@ -1,0 +1,43 @@
+/*RESET*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	display: none;
+}
+
+.container {
+	margin-top: 2rem;
+}
+
+.btn {
+	color: black;
+	background-color: #16B598;
+	
+}
+
+#volver {
+	background-color: #F89C1F;
+}
+
+.btn:hover, #volver:hover{
+	color: white;
+	border-color: #6F42C1;
+	background-color: #6F42C1;
+}
+
+
+@media screen and (max-width: 768px) {
+	.table {
+		display: none;
+	}
+	h2{
+		display: none;
+	}
+	h1 { 
+		text-align: center;
+		display: block;
+	}
+}
