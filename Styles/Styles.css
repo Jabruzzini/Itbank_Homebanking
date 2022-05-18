@@ -8,6 +8,11 @@ h1 {
 	display: none;
 }
 
+/*  */
+.usuario, .ayuda{
+
+	padding: 0.3rem;
+}
 .container {
 	margin-top: 2rem;
 }
