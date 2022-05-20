@@ -19,8 +19,7 @@ h1 {
 
 .btn {
 	color: black;
-	background-color: #16B598;
-	
+	background-color: #16B598;	
 }
 
 #volver {
@@ -33,11 +32,26 @@ h1 {
 	background-color: #6F42C1;
 }
 
-
 @media screen and (max-width: 768px) {
-	.table {
+	
+	table {
+		margin-top: 1rem;
+		width:100%;
+	}
+	thead {
 		display: none;
 	}
+
+	tr td:first-child {
+		background: #f0f0f0;
+		font-weight:bold;
+		font-size:1.3em;
+	}
+	tbody td {
+		display: block;
+		text-align:center;
+	}
+	
 	h2{
 		display: none;
 	}
