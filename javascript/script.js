@@ -7,5 +7,5 @@ Funciona cuando el navegador abre nuestro documento*/
 	}else{
 		$('.table').removeClass('pesos')
 	}
- });
+ }); /*No me funciono :C*/
 
