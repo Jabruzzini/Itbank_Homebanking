@@ -1,0 +1,28 @@
+h1 {
+    color: white;
+	font-family: lexend;
+	font-style: bond;
+	font-size: 50px;
+	line-height: 88px;
+}
+/*estilo de titulos h2 y h3 (iniciar sesion, camila)*/
+h2, h3 {
+	color: #16B598;
+	font-family: 'inconsolata';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 47px;
+}
+
+.barra {
+	background-color: #198754;
+	border-radius: 6px;
+	color: white;
+}
+
+.ingresar {
+	background-color: #F89C1F;
+	border-radius: 10px;
+	color: white;
+}
