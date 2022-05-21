@@ -10,7 +10,6 @@ h1 {
 
 /*  */
 .usuario, .ayuda{
-
 	padding: 0.3rem;
 }
 .container {
@@ -58,5 +57,18 @@ h1 {
 	h1 { 
 		text-align: center;
 		display: block;
+	}
+	.container {
+		margin-top: 1.5rem;
+	}
+	.navbar-brand {
+		display: block;
+	}
+	.navbar .container-fluid {
+		/* position: relative; */
+		flex-wrap: nowrap;			
+	}
+	.container-fluid .iconos {
+		display: flex;
 	}
 }
