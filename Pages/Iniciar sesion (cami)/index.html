@@ -34,20 +34,24 @@
         </nav>
     </header>
     <!--fondo eslogan e imagen-->
-    <section>
-        <h2>Te damos la bienvenida</h2>
-        <h3>¡A solo un Click de distancia!</h3>
-        <img src="../../Multimedia/dibujologin.png" width="50%"/>
+    <section id="section">
+        <div id="bienvenida">
+            <h2>Te damos la bienvenida</h2>
+            <h3>¡A solo un Click de distancia!</h3>
+            <img class="dibujologin" src="../../Multimedia/dibujologin.png" width="50%"/>
+        </div>
     <!--parte para iniciar sesion-->
-        <form action="" method="POST"> <!--en "" va la pag de inicio-->
-            <input class="barra" name="DNI" placeholder="Ingresa tu DNI"/>
-            <br>
-            <input class="barra" type="password" name="PIN" placeholder="Ingresa tu PIN"/>
-            <br>
-            <input class="barra" name="usuario" placeholder="Ingresa tu usuario"/>
-            <br>
-            <button class="ingresar" type="submit">Ingresar</button>
-        </form>
-        <p>¿Olvidaste tu PIN y/o usuario?</p>
+        <article id="datos">
+            <form action="" method="POST"> <!--en "" va la pag de inicio-->
+                <input class="barra" name="DNI" placeholder="Ingresa tu DNI"/>
+                <br>
+                <input class="barra" type="password" name="PIN" placeholder="Ingresa tu PIN"/>
+                <br>
+                <input class="barra" name="usuario" placeholder="Ingresa tu usuario"/>
+                <br>
+                <button class="ingresar" type="submit">Ingresar</button>
+            </form>
+            <a href="#">¿Olvidaste tu PIN y/o usuario?</a>
+        </article>
     </section>
 </body>
