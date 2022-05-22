@@ -1,50 +1,104 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="#">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITBANK</title>
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../../Styles/Styles.css">
+    <link rel="stylesheet" href="Inversiones.css">
+
 </head>
-
 <body>
-
-    <div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../../Multimedia/logoITBANK.png" alt="logoITBANK" width="50%" height="24%">
-                </a>
-                <div class="iconos">
-                    <a class="usuario" href="#">
-                        <img src="../../Multimedia/iconousuario.png" alt="usuario" width="60px" height="50px">
-                    </a>
-                    <a class="ayuda" href="#">
-                        <img src="../../Multimedia/signoayuda.png" alt="ayuda" width="60px" height="50px">
-                    </a>
-                </div>
-        </nav>
-    </div>
+    
     <header>
-        <table>
-            <th class="Inversiones">Inversiones</th>
-        </table>
+        <div class="Logo_superior">
+            <div class="logo">  
+                <img class="logo" src="Imagenes/logoITBANK.png" alt="">
+                
+            </div>
+        
+        </div>
+        <div class="container_barra">
+
+            <div class="menu">
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="Inicio">Inicio</a></li>
+                        <li><a href="#" id="seleccion">Tenencias</a></li>
+                        <li><a href="#">Plazo Fijo</a>
+                            <ul>
+                                
+                                <li><a href="#">Alta de Plazo Fijo</a></li>
+                                <li><a href="#">Renovación</a></li>
+                                <li><a href="#">Cancelación</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Bonos</a>
+                            <ul>
+                                <li><a href="#">Operaciones</a></li>
+                                <li><a href="#">Licitaciones</a></li>
+                                <li><a href="#">Cierre de cuenta</a></li>
+                                <li><a href="#">Términos y condiciones</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Fondos</a>
+                            <ul>
+                                <li><a href="#">Suscripción</a></li>
+                                <li><a href="#">Alta de cuenta</a></li>
+                                <li><a href="#">Baja de cuenta</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Moneda Extranjera</a>
+                            <ul>
+                                <li><a href="">Compra</a></li>
+                                <li><a href="">Venta</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mercado</a>
+                        <ul>
+                            <li><a href="#">Informes</a></li>
+                            <li><a href="#">Commodities</a></li>
+                            <li><a href="#">Divisas</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+      
     </header>
-    <table button style="width: 900px;">
-        <button id="Tenencias" type="menu">Tenencias</button>
-        <button class="Plazo Fijo" type="menu">Plazo Fijo</button>
-        <button id="Moneda Corriente" type="menu">Moneda Corriente</button>
-        <button class="Acciones" type="menu">Acciones</button>
-        <button id="Datos del Mercado" type="menu">Datos del Mercado</button>
-        <button class="Fondos" type="menu">Fondos</button>
-        <hr>
-    </table>
+
+    <main>
+        <article>
+            <h2>PLAZO FIJO</h2>
+            <ul>
+                Usted no tiene productos disponibles
+            </ul>
+            
+        </article>
+        <article>
+            <h2>TÍTULOS</h2>
+            <ol>No hay productos disponibles</ol>
+            <ol>No hay servicios disponibles</ol>
+        </article>
+        <article>
+            <h2>FONDOS</h2>
+            <ol>El servicio no está disponible</ol>
+        </article>
+    </main>
+    <footer class="pie_pagina">
+        Copyright 2021
+        
+        
+    </footer>
+
 
 </body>
+</html>
+    </header>
 
+</body>
 </html>
