@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="#">
+    <title>ITBANK/iniciar sesion</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../../Styles/inicio-sesion.css">
+</head>
+<body>
+    <!--encabezado-->
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../Multimedia/logoITBANK.png" alt="logoITBANK" width="50%" height="24%">
+                </a>
+                <h1>HOME BANKING</h1>
+                <div class="iconos">
+                    <a class="ayuda" href="#">
+                        <img src="../../Multimedia/signoayuda.png" alt="ayuda" width="60px" height="50px">
+                    </a>
+                    <a class="idioma" href="#">
+                        <img src="../../Multimedia/banderaEspaña.png" alt="idioma" width="60px">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--fondo eslogan e imagen-->
+    <section id="section">
+        <div id="bienvenida">
+            <h2>Te damos la bienvenida</h2>
+            <h3>¡A solo un Click de distancia!</h3>
+            <img class="dibujologin" src="../../Multimedia/dibujologin.png" width="50%"/>
+        </div>
+    <!--parte para iniciar sesion-->
+        <article id="datos">
+            <form action="" method="POST"> <!--en "" va la pag de inicio-->
+                <input class="barra" name="DNI" placeholder="Ingresa tu DNI"/>
+                <br>
+                <input class="barra" type="password" name="PIN" placeholder="Ingresa tu PIN"/>
+                <br>
+                <input class="barra" name="usuario" placeholder="Ingresa tu usuario"/>
+                <br>
+                <button class="ingresar" type="submit">Ingresar</button>
+            </form>
+            <a href="#">¿Olvidaste tu PIN y/o usuario?</a>
+        </article>
+    </section>
+</body>
