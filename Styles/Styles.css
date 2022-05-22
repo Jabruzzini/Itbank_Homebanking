@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+.row{
+	margin-top: 1.5rem;
+}
 .body {
 	background-image: url('../Multimedia/fondoInicio.png');
 	background-repeat: no-repeat;
