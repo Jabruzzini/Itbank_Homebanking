@@ -6,7 +6,7 @@
 .body {
 	background-image: url('../Multimedia/fondoInicio.png');
 	background-repeat: no-repeat;
-	background-size: 100% 120%;
+	background-size: 100% 75%;
 }
 h1 {
 	display: none;
@@ -54,7 +54,6 @@ h1 {
 #volver {
 	background-color: #F89C1F;
 }
-
 .btn:hover, #volver:hover{
 	color: white;
 	border-color: #6F42C1;
@@ -103,7 +102,7 @@ h1 {
 	.body {
 		background: url('../Multimedia/RfondoInicio.png');
 		background-repeat: no-repeat;
-		background-size: 100% 120%;
+		background-size: 100% 100%;
 	}
 	.main {
 		display: block;
@@ -117,4 +116,5 @@ h1 {
 	width: 100%;
 	margin: 1rem 0;
 	}
+	
 }
