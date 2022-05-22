@@ -3,23 +3,53 @@
 	margin: 0;
 	padding: 0;
 }
-
+.body {
+	background-image: url('../Multimedia/fondoInicio.png');
+	background-repeat: no-repeat;
+	background-size: 100% 120%;
+}
 h1 {
 	display: none;
 }
-
-/*  */
 .usuario, .ayuda{
 	padding: 0.3rem;
 }
-.container {
-	margin-top: 2rem;
+.main{
+	display: flex;
+	justify-content: space-between;
 }
-
+.bienvenido {
+	display: flex;
+	justify-content: left;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1.5rem;
+	margin-left: 5.8rem;
+}
+.inicio {
+	display: flex;
+	justify-content: flex-end;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+	margin: 2.5rem 0.3rem 2.5rem 0.3rem;
+	width: 50%;
+}
+ .inicio .botones{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: rgba(25,135,84, 0.8);
+	margin: 0 1.5rem;
+	padding: 3rem 1.5rem;
+	width: 100%;
+} 
 .btn {
 	color: black;
 	background-color: #16B598;	
 }
+.botones .user {
+	color: white;
+	background-color: #212529;	
+} 
 
 #volver {
 	background-color: #F89C1F;
@@ -65,10 +95,26 @@ h1 {
 		display: block;
 	}
 	.navbar .container-fluid {
-		/* position: relative; */
 		flex-wrap: nowrap;			
 	}
 	.container-fluid .iconos {
 		display: flex;
+	}
+	.body {
+		background: url('../Multimedia/RfondoInicio.png');
+		background-repeat: no-repeat;
+		background-size: 100% 120%;
+	}
+	.main {
+		display: block;
+	}
+	.bienvenido{
+		display: flex;
+		justify-content: center;
+		margin: 1rem 0;
+	}
+	.inicio{
+	width: 100%;
+	margin: 1rem 0;
 	}
 }
