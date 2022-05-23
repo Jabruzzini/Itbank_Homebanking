@@ -22,7 +22,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="../../Multimedia/logoITBANK.png" alt="logoITBANK" width="50%" height="24%">
                 </a>
-                <h1>HOME BANKING</h1>
+                <h1 class="HB">HOME BANKING</h1>
                 <div class="iconos">
                     <a class="ayuda" href="#">
                         <img src="../../Multimedia/signoayuda.png" alt="ayuda" width="60px" height="50px">
@@ -43,17 +43,15 @@
         </div>
     <!--parte para iniciar sesion-->
         <article id="datos">
-            <h1 id="titulodatos">Ingresá tus datos para operar</h1>
-            <form class="container" method="POST">
-                <input class="barra" name="DNI" placeholder="Ingresa tu DNI"/>
-                <br>
-                <input class="barra" type="password" name="PIN" placeholder="Ingresa tu PIN"/>
-                <br>
-                <input class="barra" name="usuario" placeholder="Ingresa tu usuario"/>
-                <br>
-                <button class="ingresar" type="submit" href="../Iniciar sesion (cami)/inicio.html">Ingresar</button>
+            <h1 id="titulodatos"><strong>Ingresá tus datos para operar</strong></h1>
+            <form class="container d-grid gap-2 " method="POST">
+                <input class="barra form-control" name="DNI" placeholder="Ingresa tu DNI"/>
+                <input class="barra form-control" type="password" name="PIN" placeholder="Ingresa tu PIN"/>
+                <input class="barra form-control" name="usuario" placeholder="Ingresa tu usuario"/>
+                <a class="barra form-control ingresar" type="button" href="/Pages/Iniciar sesion (cami)/inicio.html">Ingresar</a>
+                <a class="olvidar" href="#">¿Olvidaste tu PIN y/o usuario?</a>
             </form>
-            <a href="#">¿Olvidaste tu PIN y/o usuario?</a>
+            
             <div id="celular">
                 <img class="iconocelular" src="../../Multimedia/iconocelular.png" width="150px"/>
                 <p class="textocelular">

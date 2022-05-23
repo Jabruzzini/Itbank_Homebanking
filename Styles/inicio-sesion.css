@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 h1 {
     color: white;
 	font-family: lexend;
@@ -5,7 +9,11 @@ h1 {
 	font-size: 50px;
 	line-height: 88px;
 }
-
+#section{
+	display: flex;
+	justify-content: space-between;
+	height: 45rem;
+}
 #bienvenida {
 	background-position: letf;
 	padding: 70px 30px;
@@ -24,43 +32,35 @@ h2, h3 {
 }
 
 .dibujologin {
-	width: 700px;
+	width: 120%;
 }
 
 #datos {
 	background-color: rgba(0, 0, 0, 0.69);
 	background-size: cover;
-	background-position: right top;
-	width: 42%;
+	width: 40%;
 	height: 800px;
-	float: right;
 	padding-top: 5%;
 }
 
 #titulodatos {
 	font-family: 'inconsolata';
-	font-style: normal;
-	font-weight: 500;
 	font-size: 40px;
 	line-height: 30px;
 	text-align: center;
 	margin: 0 0 55px 0;
-
 }
-
 .container {
-	width: 270px;
-	margin: 0 auto;
+	margin-top: 4rem;
+	width: 80%;
 }
 
 .barra {
-	background-color: #198754;
+	background-color: white;
 	border-radius: 6px;
-	color: white;
-	border: solid 1px white;
-	width: 270px;
-	margin: 10px 0px 15px;
-	height: 40px;
+	border: solid 1px #198754;
+	width: 100%;
+	
 }
 
 .ingresar {
@@ -68,31 +68,32 @@ h2, h3 {
 	border-radius: 17px;
 	color: white;
 	border: solid 1px white;
-	height: 40px;
-	width: 140px;
-	margin: 30px 0px 10px 60px;
+	width: 100%;
 }
 
 p {
 	color: white;
 }
 
-article a:link {
-	color: blue;
-	margin: 0 0 0 185px;
-
+article a {
+	color: white;
+	text-align: center;
+	text-decoration: none;
 }
 
 #celular {
+	display: flex;
 	background-color: rgba(255, 255, 255, 0.904);
-	width: 450px;
-	margin: 60px auto;
+	width: 90%;
+	margin-top: 6rem;
+	margin-left: 2rem;
 	border-radius: 6px;
 }
 
 .iconocelular {
-	float: left;
-	margin: 5px 0 5px 5px;
+	margin: 2rem 1rem;
+	height: 10%;
+	width: 15%;
 }
 
 .textocelular {
@@ -101,5 +102,24 @@ article a:link {
 	font-family: 'inconsolata';
 	font-weight: 1000;
 	margin: 20px 20px 20px 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	#bienvenida{
+		display: none;
+	}
+	#datos {
+		background-color: rgba(0, 0, 0, 0.69);
+		background-size: cover;
+		width: 100%;
+		padding-top: 5%;
+	}
+	.HB{
+		display: none;
+	}
+	.iconos {
+		display: none;
+	}
 }
 
