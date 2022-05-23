@@ -1,0 +1,38 @@
+#select-ctas {
+    padding-right:250px;
+    padding-bottom:20px;
+    margin:1px;
+}
+#button-barra {
+    text-align: right;
+}
+#logo-barra {
+    padding-left: 30%;
+    text-align: center;
+}
+.opciones {
+    border-radius: 5px;
+    padding-bottom: 12px;
+    padding-top: 5px;
+    font-size: large;
+    max-width: min-content;
+}
+#boton-b {
+    border: 2px white;
+    margin:1px;
+}
+#area-cuenta {
+    font-size: 24px;
+    border: black solid 1px;
+    text-align: center;
+    padding-block: 0%;
+}
+#din-en-cta {
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 100px;
+    text-align: center;
+    box-sizing:border-box;
+    border:100px
+
+}
