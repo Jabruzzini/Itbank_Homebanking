@@ -17,7 +17,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background:black;
+    background:#212529;
 }
 
 
@@ -32,7 +32,7 @@ header{
 
 .logo img{
     
-    background-color: black;
+    background-color:#212529;
     width: 250px;
 }
 
@@ -141,7 +141,7 @@ nav ul li ul li a:hover{
 /*artículos*/
 
 main{
-    background: lightgrey;
+    background: white;
     padding: 40px 20px;
     margin-top: 194px;
 }
@@ -150,12 +150,12 @@ article{
     max-width: 1200px;
     margin: 20px auto;
     padding: 40px;
-    background:brown;
-    color: white;
+    background:#16B598 ;
+    color:#212529;
 }
 
 footer{
-    background-color: black;
+    background-color:#212529;
     padding: 20px;
     color: white
 }
@@ -184,9 +184,6 @@ footer{
 #check_menu{
     display: none;
 }
-
-
-
 
 @media screen and {max-width: 720px;
     .logo_superior {
