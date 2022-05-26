@@ -1,11 +1,11 @@
-/*Funcion Mostrar menu de comprobantes
-Funciona cuando el navegador abre nuestro documento*/
+const lista = document.getElementById('lista');
+const tabla =document.getElementById('table');
+console.log(lista);
+console.log(tabla);
 
- $('document').ready(function() {
-	if(window.innerWidth < 768){
-		$('.table').addClass('pesos');
-	}else{
-		$('.table').removeClass('pesos')
-	}
- }); /*No me funciono :C*/
-
+lista.addEventListener('click', (e) =>{
+	console.log(tabla);
+	tabla.classList.toggle('activo');
+	console.log(e.target);
+});
+	

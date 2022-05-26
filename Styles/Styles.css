@@ -64,7 +64,9 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-	
+	.activo{
+		display: none;
+	}
 	table {
 		margin-top: 1rem;
 		width:100%;
@@ -82,7 +84,6 @@ h1 {
 		display: block;
 		text-align:center;
 	}
-	
 	h2{
 		display: none;
 	}
